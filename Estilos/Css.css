@@ -9,13 +9,6 @@
     font-family: 'Inter Tight', sans-serif;
 }
 
-:root{
-    --background-color01: rgb(238, 228, 228);
-    --background-color02: rgb(233, 27, 27);
-    --text-color01: black;
-    --text-color02: white;
-}
-
 body {
     line-height: 1.5;
 }
