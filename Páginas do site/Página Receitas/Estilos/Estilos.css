@@ -128,7 +128,7 @@ ul a:hover .seta {
 }
 
 .spaceBox {
-    padding: 45px 0 20px;
+    padding: 25px 0 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -179,4 +179,143 @@ ul a:hover .seta {
     text-decoration: none;
     color: black;
     margin: auto;
+}
+
+.pDicas p {
+    font-size: 17px;
+    padding: 25px 0 5px;
+}
+
+.BoxDicas {
+    padding: 18px 0 10px;
+}
+
+.BoxDicas p {
+    font-size: 17px;
+}
+
+.fimDicas {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid  black;
+}
+
+#spaceRead {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#buttonRead {
+    margin: auto;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#buttonRead button {
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+#spaceRead:hover {
+    box-shadow: 1px 1px 3px 0 black;
+    transition: .1s;
+}
+
+#ReadMore {
+    display: none;
+}
+
+/* --------------------------Footer--------------------------- */
+
+footer {
+    background-color: rgb(11, 10, 10);
+    box-shadow: -2px 2px 3px 1px white;
+    color: white;
+    margin-top: 25px;
+}
+
+#cont-img {
+    padding: 0 10.5% 20px;
+}
+
+footer img {
+    width: 110px;
+    /* margin: 25px 0; */
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 33%;
+    padding: 0 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 8px;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container-02 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 7px 0;
+    margin-top: 18px;
+}
+
+span#nome a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+span#nome a:hover {
+    border-bottom: 1px solid black;
 }
