@@ -27,7 +27,7 @@ body {
     background-color: transparent;
     color: white;
     font-weight: 500;
-
+    z-index: 100;
 }
 
 #header.Scroll {
@@ -139,6 +139,9 @@ ul a:hover .seta {
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
+    background: url(../Imagens/background-03.jpg);
+    background-position: center center;
+    background-size: 185px;
 }
 
 .boxopc a{
@@ -159,6 +162,19 @@ ul a:hover .seta {
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
+}
+
+#Destaque {
+    overflow: hidden;
+}
+
+#Destaque img {
+    width: 100%;
+    transition: .7s;
+}
+
+#Destaque img:hover {
+    transform: scale(1.5);
 }
 
 .boxDest a {
@@ -211,7 +227,6 @@ ul a:hover .seta {
     border: 1px solid black;
     margin-top: 20px;
     margin-bottom: 20px;
-
     font-size: 18px;
     font-weight: 700;
 }
@@ -239,7 +254,10 @@ ul a:hover .seta {
 
 #ReadMore {
     display: none;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
 }
+
 
 /* --------------------------Footer--------------------------- */
 
