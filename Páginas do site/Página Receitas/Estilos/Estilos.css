@@ -156,39 +156,43 @@ ul a:hover .seta {
     padding: 45px 0 20px;
 }
 
-.boxDest {
+.imgDestMaior {
     width: 350px;
     height: 270px;
     border: 1px solid black;
     border-radius: 10px;
-    display: flex;
-}
-
-#Destaque {
     overflow: hidden;
 }
 
-#Destaque img {
-    width: 100%;
-    transition: .7s;
-}
-
-#Destaque img:hover {
-    transform: scale(1.5);
-}
-
-.boxDest a {
-    text-decoration: none;
-    color: black;
-    margin: auto;
-}
-
-.boxopcDest {
+.imgDestMenor {
     width: 240px;
     height: 130px;
     border: 1px solid black;
     border-radius: 10px;
-    display: flex;
+    overflow: hidden;
+}
+
+.imgDestMaior img {
+    width: 100%;
+    transition: .7s;
+}
+
+.imgDestMenor img {
+    width: 100%;
+    transition: .7s;
+}
+
+.imgDestMaior img:hover {
+    transform: scale(1.5);
+}
+
+.imgDestMenor img:hover {
+    transform: scale(1.5);
+}
+
+.nomeDest {
+    padding: 10px 0;
+    text-align: center;
 }
 
 .boxopcDest a {
