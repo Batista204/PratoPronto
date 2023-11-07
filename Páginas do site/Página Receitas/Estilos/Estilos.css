@@ -102,17 +102,22 @@ ul a:hover .seta {
 }
 
 .banner {
-    background-color: lightgray;
-    padding-top: 10%;
-    border: 1px solid black;
+    background: url(../Imagens/background-06.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    padding-top: 21%;
+    border-bottom: 1px solid black;
     box-shadow: 1px -1px 7px 0 black;
 }
 
 .banner h1 {
+    color: black;
     text-align: center;
-    font-size: 150px;
+    font-size: 135px;
     font-weight: 300;
-    margin: 20px 0;
+    position: relative;
+    top: -100px;
 }
 
 .banner p {
@@ -122,8 +127,7 @@ ul a:hover .seta {
 }
 
 #container h2 {
-
-    padding: 35px 0 5px;
+    padding: 25px 0 5px;
     border-bottom: 1px solid black;
 }
 
@@ -150,23 +154,27 @@ ul a:hover .seta {
     margin: auto;
 }
 
+.boxopc:hover {
+    border: 3px solid black;
+}
+
 .spaceBoxDest {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 45px 0 20px;
 }
 
 .imgDestMaior {
-    width: 350px;
-    height: 270px;
+    width: 463px;
+    height: 280px;
     border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .imgDestMenor {
-    width: 240px;
-    height: 130px;
+    width: 275px;
+    height: 150px;
     border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
@@ -195,10 +203,19 @@ ul a:hover .seta {
     text-align: center;
 }
 
-.boxopcDest a {
+.nomeDest a {
     text-decoration: none;
     color: black;
-    margin: auto;
+    padding-top: 6px;
+}
+
+.nomeDest a:hover {
+    border-bottom: 1px solid black;
+}
+
+.spaceBoxMenor {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .pDicas p {
