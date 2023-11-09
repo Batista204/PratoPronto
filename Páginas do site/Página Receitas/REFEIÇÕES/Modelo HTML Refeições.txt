@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PratoPronto</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <script defer src="Scripts/script.js"></script>
+    <link rel="shortcut icon" href="Imagens/Favicoon do Trabalho.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--  --------------------- Header --------------------- -->
+
+    <div id="header">
+
+        <div id="logo">
+            <a href="../../../../index.html"><img src="Imagens/Logo site trabalho.png"></a>
+        </div>
+
+        <nav class="navbar">
+            <ul id="menu-navbar">
+                <li><a href="../../../../index.html" class="listHome">MENU</a></li>
+
+                <li>
+                    <a href="Páginas do site/Página Receitas/index02.html" class="listHome">RECEITAS</a>
+                    <ul class="dropdown">
+                        <li><a href="#">CAFÉ DA MANHÃ <span class="seta">&#8250;</span></a></li>
+                        <li><a href="#">ALMOÇO <span class="seta">&#8250;</span></a></li>
+                        <li><a href="#">LANCHE DA TARDE <span class="seta">&#8250;</span></a></li>
+                        <li><a href="#">JANTAR <span class="seta">&#8250;</span></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Páginas do site/Página Vídeos/index03.html" class="listHome">VIDEOS</a>
+                    <ul class="dropdown">
+                        <li><a href="#">TRUQUES <span class="seta">&#8250;</span></a></li>
+                        <li><a href="#">TUTORIAL <span class="seta">&#8250;</span></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Páginas do site/Página Ajuda/index04.html" class="listHome">AJUDA</a>
+                    <ul class="dropdown">
+                        <li><a href="#">FALE CONOSCO <span class="seta">&#8250;</span></a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- -------------------- Body -------------------- -->
+
+    <main>
+        <div class="banner">
+            <h1>JANTAR</h1>
+        </div>
+
+        <section id="preferidos">
+            <div id="container">
+
+                <h2 class="sessao">FAVORITAS</h2>
+
+                <div class="spaceBoxDest">
+                    <div class="carta">
+                        <div id="DestaqueMaior">
+                            <div class="imgDestMaior">
+                                <a href="#"><img src=""></a>
+                            </div>
+                            <div class="nomeDest">
+                                <h3><a href="#">QUEIJO</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta">
+                        <div id="DestaqueMaior">
+                            <div class="imgDestMaior">
+                                <a href="#"><img src=""></a>
+                            </div>
+                            <div class="nomeDest">
+                                <h3><a href="#">FRANGO</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta">
+                        <div id="DestaqueMaior">
+                            <div class="imgDestMaior">
+                                <a href="#"><img src=""></a>
+                            </div>
+                            <div class="nomeDest">
+                                <h3><a href="#">CARNE</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
