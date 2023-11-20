@@ -55,7 +55,7 @@ body {
     padding-left: 5px;
 }
 
-ul li ul.dropdown li{
+ul li ul.dropdown li {
     display: block;
 }
 
@@ -68,9 +68,9 @@ ul li ul.dropdown {
     padding-top: 22px;
 }
 
-ul.dropdown li{
+ul.dropdown li {
     border-bottom: 1px solid rgb(219 215 215 / 28%);
-    
+
 }
 
 .listHome:hover {
@@ -96,16 +96,23 @@ ul a:hover .seta {
 
 /* ----------------------------- Body ----------------------------- */
 
+#preferidos {
+    background: linear-gradient(to bottom, #F6F3EB, white);
+    padding-top: 10px;
+}
+
 #container {
     padding: 25px 10.5%;
 }
 
 .banner {
+    background-image: url(../Imagens/background-01.jpg);
+    background-size: cover;
+    background-position: center center;
     width: 100%;
-    height: 27em;
+    height: 29em;
     display: flex;
     border-bottom: 1px solid black;
-    margin-bottom: 15px;
 }
 
 .banner h1 {
@@ -115,26 +122,31 @@ ul a:hover .seta {
 
 .sessao {
     border-bottom: 1px solid black;
+    text-transform: uppercase;
 }
 
-.carta {
-    font-size: 1.3em;
-    padding: 15px;
-    padding-bottom: 30px;
-    border: 1px solid black;
-
-}
 .spaceBoxDest {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 45px 0 20px;
 }
 
 .imgDestMaior {
-    width: 320px;
-    height: 275px;
+    width: 260px;
+    height: 160px;
     border: 1px solid black;
+    border-radius: 10px;
     overflow: hidden;
+}
+
+.imgDestMaior img {
+    width: 100%;
+    transition: .4s;
+}
+
+.imgDestMaior img:hover {
+    transform: scale(1.5);
 }
 
 .nomeDest {
@@ -149,5 +161,225 @@ ul a:hover .seta {
 }
 
 .nomeDest a:hover {
+    border-bottom: 1px solid black;
+}
+
+/* -------------------------- Importância -------------------------- */
+
+#importancia {
+    background: linear-gradient(to bottom, #F6F3EB, white);
+}
+
+#txt p {
+    font-size: 18.5px;
+    padding: 25px 0;
+    text-indent: 10px;
+}
+
+.img-texto {
+    display: flex;
+    margin: 5px 0;
+}
+
+#txt img {
+    width: 20em;
+    margin: auto;
+    border: 1px solid black;
+}
+
+/* -------------------------- Receitas -------------------------- */
+
+#receitas {
+    background: linear-gradient(to bottom, #F6F3EB, white);
+}
+
+#bloco-receitas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.caixa-receitas {
+    margin-top: 30px;
+    width: 280px;
+    height: 340px;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 11px;
+}
+
+.caixa-receitas:hover {
+    box-shadow: 0 0 16px rgb(211, 211, 211);
+}
+
+.caixa-receitas:hover .img-receitas img {
+    transform: scale(1.4);
+}
+
+.caixa-receitas:hover .ver-mais {
+    background-color: black;
+}
+
+.caixa-receitas:hover .ver-mais a {
+    color: white;
+}
+
+.img-receitas {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-receitas img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.info-receitas {
+    margin: 15px;
+}
+
+.caract-receita {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.caract-receita i {
+    font-size: 20px;
+}
+
+.caract-receita i:hover {
+    color: red;
+}
+
+.status-receita {
+    font-weight: 600;
+    width: 40px;
+    background-color: rgba(255, 255, 0, 0.786);
+    display: inline-flex;
+    border-radius: 5px;
+}
+
+.status-receita p {
+    margin: auto;
+    font-size: 13px;
+}
+
+#heart {
+    cursor: pointer;
+    color: black;
+}
+
+#prato {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px 10px 35px;
+}
+
+.ver-mais {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.ver-mais a {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+#trabalhando {
+    margin: 45px 0;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+}
+
+#trabalhando p {
+    margin-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+/* --------------------------Footer--------------------------- */
+
+footer {
+    background-color: rgb(11, 10, 10);
+    box-shadow: -2px 2px 3px 1px white;
+    color: white;
+}
+
+#cont-img {
+    padding: 0 10.5% 20px;
+}
+
+footer img {
+    width: 110px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 33%;
+    padding: 0 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 8px;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container-02 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 7px 0;
+    margin-top: 18px;
+}
+
+span#nome a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+span#nome a:hover {
     border-bottom: 1px solid black;
 }

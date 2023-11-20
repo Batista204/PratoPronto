@@ -1,0 +1,23 @@
+// ----------------------- Script do Favoritar ----------------------- //
+
+var save = document.getElementById("heart");
+
+save.addEventListener("click", function() {
+
+    if(save.style.color === "red") {
+        save.style.color = "black";
+    }else {
+        save.style.color = "red";
+    }
+});
+----------------------------------------------------------------------------------
+HTML:                           
+<div id="heart">                          
+     <i class="fa-solid fa-heart"></i>                             
+</div>
+----------------------------------------------------------------------------
+CSS: 
+#heart {
+    cursor: pointer;
+    color: black;
+}

@@ -1,4 +1,4 @@
-// --------------------Script do Scroll----------------------- //
+// -----------------------Script do Scroll----------------------- //
 
 window.addEventListener("scroll", function() {
     let header = document.querySelector('#header')
