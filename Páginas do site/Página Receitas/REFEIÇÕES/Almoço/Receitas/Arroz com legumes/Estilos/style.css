@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------------------------Header-------------------------- */
+
+#header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 10.5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    z-index: 1000;
+}
+
+#header.Scroll {
+    background-color: white;
+}
+
+#header:hover {
+    background-color: white;
+}
+
+.navbar {
+    padding-right: 40px;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 52px;
+}
+
+#logo img {
+    width: 110px;
+    padding-left: 5px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+.listHome a {
+    color: red;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding-top: 22px;
+}
+
+ul.dropdown li {
+    border-bottom: 1px solid rgb(219 215 215 / 28%);
+
+}
+
+.listHome:hover {
+    border-bottom: 1px solid black;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul.dropdown li {
+    margin: 15px 4px 8px;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+ul a:hover .seta {
+    padding-left: 10px;
+}
+
+/* ----------------------- body -----------------------  */
+
+section {
+    background-image: linear-gradient(to bottom, #F6F3EB, white);
+}
+
+#container {
+    padding: 25px 10.5%;
+}
+
+#container h1 {
+    text-align: center;
+    margin-top: 105px;
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+}
+
+#boxVideoInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 14% 10px;
+}
+
+#boxVideoInfo iframe {
+    width: 630px;
+    height: 440px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.infoPrato {
+    height: 440px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.infoPrato h3 {
+    text-align: center;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.infoPrato p {
+    text-align: center;
+    padding: 15px;
+}
+
+#caract {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 15.5%;
+}
+
+.teste-img {
+    display: flex;
+}
+
+#caract p {
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin: auto;
+    margin-left: 5px;
+}
+
+#caract img {
+    width: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+#boxGrid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 5%;
+}
+
+#boxGrid h2 {
+    margin-bottom: 22px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#boxGrid p {
+    margin-bottom: 10px;
+}
+
+#scrollTop {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid black;
+    display: inline-flex;
+    position: fixed;
+    right: 50px;
+    bottom: 90px;
+    visibility: hidden;
+}
+
+#scrollTop img {
+    margin: auto;
+    width: 22px;
+}
+
+#scrollTop.Scroll {
+    visibility: visible;
+    opacity: 1;
+}
+
+#bloco-receitas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.recomendaçao {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 15px 6.5%;
+    font-size: 26px;
+}
+
+.caixa-receitas {
+    margin-top: 30px;
+    width: 280px;
+    height: 340px;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 11px;
+}
+
+.caixa-receitas:hover {
+    box-shadow: 0 0 16px rgb(211, 211, 211);
+}
+
+.caixa-receitas:hover .img-receitas img {
+    transform: scale(1.4);
+}
+
+.caixa-receitas:hover .ver-mais {
+    background-color: black;
+}
+
+.caixa-receitas:hover .ver-mais a {
+    color: white;
+}
+
+.img-receitas {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-receitas img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.info-receitas {
+    margin: 15px;
+}
+
+.caract-receita {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.status-receita p {
+    margin: auto;
+    font-size: 13px;
+}
+
+.status-receita {
+    font-weight: 600;
+    width: 40px;
+    background-color: rgba(255, 255, 0, 0.786);
+    display: inline-flex;
+    border-radius: 5px;
+}
+
+#prato {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px 10px 35px;
+}
+
+.ver-mais {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.ver-mais a {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* --------------------------Footer--------------------------- */
+
+footer {
+    background-color: rgb(11, 10, 10);
+    box-shadow: -2px 2px 3px 1px white;
+    color: white;
+}
+
+#cont-img {
+    padding: 0 10.5% 20px;
+}
+
+footer img {
+    width: 110px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 33%;
+    padding: 0 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 8px;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container-02 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 7px 0;
+    margin-top: 18px;
+}
+
+span#nome a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+span#nome a:hover {
+    border-bottom: 1px solid black;
+}
+
+/* ------------------------ Midia Query ------------------------ */
+
+@media (max-width: 500px) {
+    .infoPrato {
+        width: 245px;
+        height: 190px;
+        font-size: 13px;
+    }
+
+    #boxVideoInfo iframe {
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .infoPrato p {
+        padding: 5px;
+    }
+}
